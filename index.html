@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CRYPTEX 2.0</title>
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.4/css/mdb.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -43,7 +44,25 @@
   			font-size: 50px;
   			color: white;
 
+	}
+	.btnfb{
+		background-color:  	#3b5998;
+		
+	}
+	.btng{
+		background-color:  	#d34836;
+		
+	}
 }
+
+	.btnfb{
+		background-color:  	#3b5998;
+		/*width: 20%;*/
+	}
+	.btng{
+		background-color:  	#d34836;
+		/*width: 20%;*/
+	}
 	</style>
 	
 </head>
@@ -59,16 +78,17 @@
 	
 	<div></div>
 	<h3 align="center" >CRYPTEX 2.0</h3>
-	<div class="container" style="margin-top: 6vh; margin-bottom: 9vh">
+
 	<div class="row">
-	<div class="col-md-3 col-sm-1">	</div>
-	<div class="col-md-6 col-sm-10">	
-	<p id="demo"></p>
+		<div class="col-md-3"></div>
+	<div class="col-md-6 col-sm-8" align="center" style="margin: 20px;">
+		<button type="button" class="btn btnfb active " ><i class="fa fa-facebook left "  ></i> Sign In</button>
+		<button type="button" class="btn btng active"><i class="fa fa-google-plus left"></i> Sign In</button>
+
 	</div>
-	<div class="col-md-3 col-sm-1">	</div>
+	<div class="col-md-3"></div>
 	</div>
-	</div>
-	<h4 align="center" style="font-family:'Orbitron';font-size:20px; color: white">Powered By</h4>
+	<h4 align="center" style="font-family:'Orbitron';font-size:20px; color: white; margin-top: 40px">Powered By</h4>
 
 	<div class="row">
 		<div class="col-md-3 ">	</div>
@@ -81,36 +101,7 @@
 	<div class="col-md-3 ">	</div>
 	</div>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 15, 2018 00:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
 
 </body>
 </html>
